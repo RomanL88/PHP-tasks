@@ -13,7 +13,7 @@ $firstDay = 'Понедельник';
 $secondDay = 'Вторник';
 $thirdDay = 'Среда';
 
-var_dump($firstDay . ' ' . $secondDay . ' ' . $thirdDay);
+var_dump($firstDay . ' ' . $secondDay . ' ' . $thirdDay. '<br>');
 
 
 
@@ -42,10 +42,10 @@ $pawColorBlack = 'черного';
 $container = 'тазик';
 $withBlackOil = 'с мазутом';
 
-echo"Жил был кот по имени $nameCat".'<br>';
-echo"У него было $pawCount лапы, $two уха и хвост длинной $tailLength см".'<br>';
-echo"Сам он был $colorBody цвета, но лапки были $pawColor цвета".'<br>';
-echo"Однажды он пошел гулять и упал в $container $withBlackOil".'<br>';
-echo"Теперь и лапы нашего кота тоже $pawColorBlack цвета".'<br>';
+echo 'Жил был кот по имени' . $nameCat . '<br>';
+echo 'У него было ' . $pawCount . ' лапы, ' . $two .' уха и хвост длинной ' . $tailLength . ' см'.'<br>';
+echo 'Сам он был ' . $colorBody . ' цвета, но лапки были ' . $pawColor . ' цвета'.'<br>';
+echo 'Однажды он пошел гулять и упал в ' . $container . ' ' . $withBlackOil . ''.'<br>';
+echo 'Теперь и лапы нашего кота тоже ' . $pawColorBlack . ' цвета'.'<br>';
 
 // При создании этого задания ни один котик не пострадал!

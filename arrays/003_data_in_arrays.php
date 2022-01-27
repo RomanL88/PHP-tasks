@@ -5,13 +5,13 @@
 
 // 1. Создайте ассоциативный массив животных $animals
 // данные, которые нужно хранить в этом массиве: мышь - это грызун, конь - скачет по полям, хрюшка - кушает желуди
-$animals = array(]
+$animals = [
 
     "mouse"=>"животное грызун",
     "hourse"=>"скачет по полям",
     "pig"=>"кушает желуди"
     
-    );
+];
 
 
 // 2. Доработаем этот массив, добавим в него больше данных, теперь для каждого животного у нас будет не только описание, но и другие параметры:
@@ -19,69 +19,69 @@ $animals = array(]
 // конь - скачет по полям, 4 ноги, хвост: пушистый
 // хрюшка - кушает желуди, 4 ноги, хвост: крючком
 
-$animals = array(
-    'mouse' =>  array(
+$animals = [
+    'mouse' =>  [
 
         'decription'   => 'животное грызун',
         "legsCount"    => 4,
         "tail"         => "bald",   // лысый
 
-    ),
-    'hourse' => array(
+    ],
+    'hourse' => [
 
         'decription'   => 'скачет по полям',
         "legsCount"    => 4,
         "tail"         => "fluffy", // пушистый 
 
-    ),
-    'pig' =>    array(
+    ],
+    'pig' =>    [
 
         'decription'   => 'кушает желуди',
         "legsCount"    => 4,
         "tail"         => "hook", // крючком 
 
-    ),
-);
+    ],
+];
 
 // 3. Добавим еще одно уточнение, теперь мы знаем, чуть больше о хвостах:
 // хвост мыши - лысый, 10 см
 // хвост коня - пушистый, 50 см
 // хвост хрюшки - крючком, 4 см
-$animals = array(
-    'mouse' =>  array(
+$animals = [
+    'mouse' =>  [
 
         'decription'   => 'животное грызун',
         "legsCount"    => 4,
-        "tail"         => array(
+        "tail"         => [
 
             "type"   => "bald",   // лысый
             "length" => 4
-        ),
+        ],
 
-    ),
-    'hourse' => array(
+    ],
+    'hourse' => [
 
         'decription'   => 'скачет по полям',
         "legsCount"    => 4,
-        "tail"         => array(
+        "tail"         => [
 
             "type"   => "fluffy", // пушистый 
             "length" => 50
-        ),
+        ],
 
-    ),
-    'pig' =>    array(
+    ],
+    'pig' =>    [
 
         'decription'   => 'кушает желуди',
         "legsCount"    => 4,
-        "tail"         => array(
+        "tail"         => [
 
             "type"   => "hook", // крючком 
             "length" => 4
-        ),
+        ],
 
-    ),
-);
+    ],
+];
 
 
 
@@ -92,36 +92,37 @@ $animals = array(
 // Стойла, этаже 1, цвет - зеленый
 // Будка, этажей 1, цвет - красный
 // Элитный-гараж, этажей 5, цвет - черный
-$buildings = array(
+$buildings = [
 
-    'residential home' = (
+    'residential home' => [
 
         "nameBuilding" => "residential home", // Жилой дом
         "countLevels"  => 2,
         "color"        => "blue"
-    ),
-    'Stalls' =  (
+
+    ],
+    'Stalls' =>  [
 
         "nameBuilding" => "Stalls", //Стойла
         "countLevels"  => 1,
         "color"        => "green"
 
-    ),
-    'Cabin' =  (
+    ],
+    'Cabin' =>  [
 
        "nameBuilding" => "Cabin",  //Будка
         "countLevels"  => 1,
         "color"        => "red"
 
-    ),
-    'Elite-garage' =  (
+    ],
+    'Elite-garage' =>  [
 
         "nameBuilding" => "Elite-garage", //Элитный-гараж
          "countLevels"  => 5,
          "color"        => "black" 
 
-     )
-);
+    ]
+];
 
 
 // 5. Теперь нам нужно расселить животных по домам, добавьте каждому животному поле, в котором укажите где оно живет
@@ -129,48 +130,48 @@ $buildings = array(
 // мышь живет в жилом доме
 // конь живет в стойле
 // хрюшка тоже живет в стойле
-$animals = array(
+$animals = [
 
-    'mouse' =>  array(
+    'mouse' =>  [
 
         'decription'   => 'животное грызун',
         "legsCount"    => 4,
-        "tail"         => array(
+        "tail"         => [
 
                     "type"   => "bald",   // лысый
                     "length" => 4
-        ),
+        ],
 
         "nameBuilding" => "residential home", 
 
-    ),
-    'horse' => array(
+    ],
+    'horse' => [
 
         'decription'   => 'скачет по полям',
         "legsCount"    => 4,
-        "tail"         => array(
+        "tail"         => [
 
                     "type"   => "fluffy", // пушистый 
                     "length" => 50
-        ),
+        ],
 
         "nameBuilding" => "Stalls",
 
-    ),
-    'pig' =>    array(
+    ],
+    'pig' =>    [
 
         'decription'   => 'кушает желуди',
         "legsCount"    => 4,
-        "tail"         => array(
+        "tail"         => [
 
                     "type"   => "hook", // крючком 
                     "length" => 4
-        ),
+        ],
 
         "nameBuilding" => "Stalls",
 
-    ),
-);
+    ],
+];
 
 
 // 6. Теперь нам нужно поделиться информацией о всей ферме с кем-то, но на почте нам сказали, что мы можем отправить только одну переменную
