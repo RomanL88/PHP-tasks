@@ -54,7 +54,8 @@ $foodItem = rand(0, 8);
 $foodIndicator = $foods[$foodItem];
 
 switch ($foodIndicator){
-    case 'Яблоко': 
+    case 'Яблоко':
+    case 'Апельсин': 
         
         echo 'Выбранный продукт '. $foodIndicator .' - это Фрукт';
         break;
@@ -62,11 +63,6 @@ switch ($foodIndicator){
     case 'Клубника': 
         
         echo 'Выбранный продукт '. $foodIndicator .' - это Ягода';
-        break;
-
-    case 'Апельсин': 
-        
-        echo 'Выбранный продукт '. $foodIndicator .' - это Фрукт';
         break;
 
     case 'Кабачок': 
