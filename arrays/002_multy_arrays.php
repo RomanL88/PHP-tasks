@@ -2,20 +2,25 @@
 // Многомерные массивы
 
 // 1. Создайте массив $matrix, состоящих из целых чисел от 1 до 9 в виде матрицы 3х3
-$matrix = array(
-array(1,2,3),
-array(4,5,6),
-array(7,8,9),
-);
+$matrix = [
+
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+
+];
 
 // 2. Выведите центральный элемент (на строке 2 в столбце 2) из этой матрицы
-var_dump($matrix[1][1]. '<br>'); 
+print_r($matrix[1][1]);
+echo '<br>'; 
 
 // 3. Выведите последний элемент в первой строке из этой матрицы
-var_dump($matrix[0][2]. '<br>');
+print_r($matrix[0][2]);
+echo '<br>';
 
 // 4. Посчитайте и выведите сумму элементов из этой матрицы, расположенных ниже и левее диагонали 1 5 9
-var_dump($matrix[1][0] + $matrix[2][0] + $matrix[2][1]. '<br>');
+print_r($matrix[1][0] + $matrix[2][0] + $matrix[2][1]);
+echo '<br>';
 
 // 5. Создайте массив, $users описывающий следующих пользователей
 // - Никита, 29 лет, плотник
@@ -48,13 +53,13 @@ $users = [
     ];
 
 // 6. Добавьте в массив $users еще одного участника: Виталий, 30 лет, программист
-$users[]= array(
+$users[]= [
 
     "userName"   => "Vitaliy",
     "years"      => 30,
     "occupation" => "programmer",
 
-);
+];
 
 
 
@@ -64,11 +69,23 @@ $users[]= array(
 // Профессию укажите из 2-го пользователя
 // И выведите его на экран с помощью функции var_dump
 
-$mysteriousUser = array(
+ $mysteriousUser = [
 
     "userName"   => $users[2]['userName'],
     "years"      => $users[0]['years'],
     "occupation" => $users[1]['occupation'],
     
-);
+];
 var_dump($mysteriousUser);
+
+
+
+/*print_r($mysteriousUser); */
+
+/* foreach ($mysteriousUser as $x => $y) {
+
+    echo 'Key = '. $x . ' Value = '. $y; 
+    echo '<br>';
+
+}; */
+                         /*ИСПРАВЛЕНО 28.01.2022 */

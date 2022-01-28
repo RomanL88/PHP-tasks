@@ -23,22 +23,22 @@ $animals = [
     'mouse' =>  [
 
         'decription'   => 'животное грызун',
-        "legsCount"    => 4,
-        "tail"         => "bald",   // лысый
+        'legsCount'    => 4,
+        'tail'         => 'bald',   // лысый
 
     ],
     'hourse' => [
 
         'decription'   => 'скачет по полям',
-        "legsCount"    => 4,
-        "tail"         => "fluffy", // пушистый 
+        'legsCount'    => 4,
+        'tail'         => 'fluffy', // пушистый 
 
     ],
     'pig' =>    [
 
         'decription'   => 'кушает желуди',
-        "legsCount"    => 4,
-        "tail"         => "hook", // крючком 
+        'legsCount'    => 4,
+        'tail'         => 'hook', // крючком 
 
     ],
 ];
@@ -188,18 +188,25 @@ $farm = [
 // Почта наконец пришла и вы открыли конверт, а там массив $farm. Используя этот массив, выполните следующее:
 // выведите сколько лап у хрюшки
 var_dump($farm['animals']['pig']['legsCount']);
+echo '<br>';
 
 // выведите какого цвета будка
 var_dump($farm['buildings']['Cabin']['color']);
+echo '<br>';
 
 // выведите длину хвоста местных коней
 var_dump($farm['animals']['horse']['tail']['length']);
+echo '<br>';
 
 // Выведите название помещения, в котором живет мышь
-var_dump($farm['mouse']['nameBuilding']);
+var_dump($farm['animals']['mouse']['nameBuilding']);
+echo '<br>';
 
 // создайте переменную $animal и поместите в нее имя одного любого животного из названий животных
 // используйте имя на английском языке, т.е. один из ключей массива $animals
 // Выведите описание животного, на который указывает значение переменной $animal
 $animal = 'horse';
 var_dump($animals[$animal]['decription']);
+echo '<br>';
+                         /*ИСПРАВЛЕНО 28.01.2022 */
+
