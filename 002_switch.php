@@ -56,30 +56,18 @@ $foodIndicator = $foods[$foodItem];
 switch ($foodIndicator){
     case 'Яблоко':
     case 'Апельсин': 
+    case 'Банан':
         
         echo 'Выбранный продукт '. $foodIndicator .' - это Фрукт';
         break;
 
     case 'Клубника': 
-        
-        echo 'Выбранный продукт '. $foodIndicator .' - это Ягода';
-        break;
-
-    case 'Кабачок': 
-        
-        echo 'Выбранный продукт '. $foodIndicator .' - это Овощ';
-        break;
-
-    case 'Банан': 
-        
-        echo 'Выбранный продукт '. $foodIndicator .' - это Фрукт';
-        break;
-
     case 'Арбуз': 
         
         echo 'Выбранный продукт '. $foodIndicator .' - это Ягода';
         break;
 
+    case 'Кабачок':
     case 'Картошка': 
         
         echo 'Выбранный продукт '. $foodIndicator .' - это Овощ';
